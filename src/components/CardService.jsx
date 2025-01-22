@@ -11,11 +11,6 @@ const CardService = ({ icon, title, description }) => {
       </div>
     </div>
   );
-
-
-
-  
-
 };
 
 export default CardService;
