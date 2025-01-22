@@ -5,17 +5,15 @@ import { motion, AnimatePresence } from "framer-motion";
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const smoothScroll = (target, callback) => {
+    const smoothScroll = (target) => {
         const element = document.querySelector(target);
         if (!element) return;
 
         const targetPosition = element.getBoundingClientRect().top + window.scrollY;
         const startPosition = window.scrollY;
         const distance = targetPosition - startPosition;
-        const duration = 500;
+        const duration = 700;
         let start = null;
-
-        const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
 
         const animation = (currentTime) => {
             if (!start) start = currentTime;
@@ -25,17 +23,18 @@ const NavBar = () => {
 
             if (timeElapsed < duration) {
                 requestAnimationFrame(animation);
-            } else {
-                callback?.(); // Llamamos al callback cuando termina el scroll
             }
         };
+
+        const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
 
         requestAnimationFrame(animation);
     };
 
     const handleScroll = (e, id) => {
         e.preventDefault();
-        smoothScroll(id, () => setIsOpen(false)); // Cierra el menú solo después de hacer scroll
+        smoothScroll(id);
+        setIsOpen(false);
     };
 
     return (
@@ -79,7 +78,6 @@ const NavBar = () => {
                     <motion.div
                         initial={{ y: -20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        exit={{ y: -10, opacity: 0 }}
                         transition={{ duration: 0.3 }}
                         className="md:hidden bg-primary mt-2 rounded-lg p-4 shadow-lg"
                     >
