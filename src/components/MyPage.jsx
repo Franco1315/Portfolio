@@ -18,6 +18,8 @@ const MyPage = () => {
             ></a>
 
             {/* Contenido */}
+
+            
             <div className='absolute top-10 lg:top-20 left-5 lg:left-20 z-20 bg-opacity-50 text-white rounded-lg px-4 py-2'>
                 <p>- Mi página web</p>
                 <h2 className='font-medium leading-tight'>
