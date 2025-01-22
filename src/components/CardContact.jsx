@@ -19,7 +19,7 @@ const CardContact = ({ icon, title, linkText, link }) => {
                 <img src={iconArrow} alt="Arrow" className="w-6 h-6" />
             </div>
             <div className="w-full flex justify-end">
-                <a href={link} className="bg-secondary py-2 px-4 rounded-full text-white font-semibold hover:bg-primary transition-all duration-300" target="_blank">Contáctame</a>
+                <a href={link} className="bg-secondary py-2 px-4 rounded-full text-white font-semibold lg:hover:bg-primary transition-all duration-300" target="_blank">Contáctame</a>
             </div>
         </div>
     )

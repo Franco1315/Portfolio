@@ -2,7 +2,7 @@ import IconArrow from '../assets/icon-arrow.svg';
 
 const CardProject = ({ link, image, title, tags = [] }) => {
     return (
-        <div className="bg-white rounded-lg p-4 lg:p-8 shadow-xl transition-transform duration-300 hover:scale-105 relative">
+        <div className="bg-white rounded-lg p-4 lg:p-8 shadow-xl transition-transform duration-300 lg:hover:scale-105 relative">
             <a href={link} className='inset-0 absolute w-full h-full' target='_blank'></a>
             <img src={image} alt={title} className="aspect-[16/9] w-full object-contain rounded-md" />
             <h3 className="mb-4 text-xl font-semibold mt-2">{title}</h3>

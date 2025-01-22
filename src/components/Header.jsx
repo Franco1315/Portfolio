@@ -42,7 +42,7 @@ const Header = () => {
 
                 {/* Imagen del header */}
                 <motion.div
-                    className='lg:w-[50%] w-full flex justify-center lg:justify-end lg:-mt-0 bottom-0 absolute lg:right-0 lg:bottom-12'
+                    className='lg:w-[50%] w-full flex justify-center lg:justify-end lg:-mt-0 lg:absolute lg:right-0 lg:bottom-6'
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1.2, ease: "easeOut" }}
