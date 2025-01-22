@@ -5,15 +5,17 @@ import { motion, AnimatePresence } from "framer-motion";
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const smoothScroll = (target) => {
+    const smoothScroll = (target, callback) => {
         const element = document.querySelector(target);
         if (!element) return;
 
         const targetPosition = element.getBoundingClientRect().top + window.scrollY;
         const startPosition = window.scrollY;
         const distance = targetPosition - startPosition;
-        const duration = 700;
+        const duration = 500;
         let start = null;
+
+        const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
 
         const animation = (currentTime) => {
             if (!start) start = currentTime;
@@ -23,18 +25,17 @@ const NavBar = () => {
 
             if (timeElapsed < duration) {
                 requestAnimationFrame(animation);
+            } else {
+                callback?.(); // Llamamos al callback cuando termina el scroll
             }
         };
-
-        const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
 
         requestAnimationFrame(animation);
     };
 
     const handleScroll = (e, id) => {
         e.preventDefault();
-        smoothScroll(id);
-        setIsOpen(false);
+        smoothScroll(id, () => setIsOpen(false)); // Cierra el menú solo después de hacer scroll
     };
 
     return (
