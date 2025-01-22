@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #202020;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+/*efecto transicion header*/
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 200%;
+  animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/*responsive*/
+@media (max-width: 700px) {
+  h2 {
+    font-size: 25px;
+  }
+
+}
