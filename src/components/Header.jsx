@@ -11,7 +11,7 @@ const Header = () => {
             {/* Contenedor header */}
             <div id='Aboutmi' className='px-5 lg:px-20 flex-grow w-full h-auto lg:h-[calc(100vh-90px)] flex lg:flex-row flex-col items-center relative overflow-hidden'>
                 <motion.div
-                    className='lg:mt-0 mt-10 lg:w-[50%] w-full flex flex-col gap-y-4'
+                    className='lg:mt-0 mt-10 lg:w-[40%] w-full flex flex-col gap-y-4'
                     initial={{ opacity: 0, y: 50 }} 
                     animate={{ opacity: 1, y: 0 }} 
                     transition={{ duration: 1, ease: "easeOut" }} 
@@ -42,12 +42,12 @@ const Header = () => {
 
                 {/* Imagen del header */}
                 <motion.div
-                    className='lg:w-[50%] w-full flex justify-center lg:justify-end lg:-mt-0 lg:absolute lg:right-0 lg:bottom-6'
+                    className='lg:w-[60%] w-full flex justify-center lg:justify-end'
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1.2, ease: "easeOut" }}
                 >
-                    <img src={imagenHeader} alt="Imagen de Maria Franco" className='lg:w-[800px] w-[420px]' />
+                    <img src={imagenHeader} alt="Imagen de Maria Franco" className='lg:w-[650px] w-[420px] imagen-header' />
                 </motion.div>
             </div>
 

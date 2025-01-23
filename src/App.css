@@ -10,7 +10,7 @@ p,
 h1,
 h2,
 h3,
-h4,
+h4,px
 h5,
 h6 {
   color: #202020;
@@ -53,3 +53,33 @@ h2 {
   }
 
 }
+
+@media (min-width: 1400px) {
+  .imagen-header {
+    width: 750px;
+  }
+}
+
+@media (min-width: 1500px) and (min-height: 980px){
+  .imagen-header {
+    width: 800px;
+  }
+}
+
+@media (min-width: 1440px) and (min-height: 1024px){
+  .imagen-header {
+    width: 980px;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .imagen-header {
+    width: 950px;
+  }
+}
+
+
+
+
+

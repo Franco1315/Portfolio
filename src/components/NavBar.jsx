@@ -37,8 +37,6 @@ const NavBar = () => {
         smoothScroll(id);
     };
     
-    
-
     return (
         <nav className="px-5 lg:px-20 pt-6">
             <div className="bg-primary py-2 lg:py-3 flex justify-between items-center px-4 rounded-full">

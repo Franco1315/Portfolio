@@ -8,11 +8,11 @@ const CardContact = ({ icon, title, linkText, link }) => {
                     <img src={icon} alt={title} className='w-4 lg:w-5 h-4 lg:h-5' />
                 </div>
                 <div className="w-full">
-                    <h3 className="font-semibold text-lg lg:text-xl cursor-default mb-1">{title}</h3>
+                    <h3 className="font-semibold text-lg cursor-default mb-1">{title}</h3>
                     <div className='w-full lg:w-[80%]'>
                         <a
                             href={link}
-                            className="text-base lg:text-lg text-primary break-words block w-full min-w-0"
+                            className="text-base text-primary break-words block w-full min-w-0"
                             target="_blank"
                         >
                             {linkText}
