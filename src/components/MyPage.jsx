@@ -28,8 +28,8 @@ const MyPage = () => {
             ></a>
 
             {/* Contenido */}
-            <div className='absolute top-4 md:top-16 lg:top-20 left-5 lg:left-20 z-20 text-white rounded-lg px-6 py-4'>
-                <p> Mi página web</p>
+            <div className='absolute top-4 md:top-16 lg:top-20 left-5 lg:left-20 z-20 text-white rounded-lg py-4'>
+                <p>-Mi página web</p>
                 <h2 className='font-semibold leading-tight'>
                     Puedes ver el diseño de mi página 
                     <span className="border-b-2 border-secondary inline-block text-secondary transition-all duration-300 hover:border-primary hover:text-primary mx-2">

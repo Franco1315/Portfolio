@@ -89,7 +89,6 @@ const Portfolio = () => {
         const newShowAll = !showAll;
         setShowAll(newShowAll);
 
-        // Solo hacer scroll si estamos ocultando los elementos (showAll cambia a false)
         if (portfolioRef.current && !newShowAll) {
             portfolioRef.current.scrollIntoView({ behavior: 'smooth' });
         }

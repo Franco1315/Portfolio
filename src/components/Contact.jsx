@@ -31,7 +31,7 @@ const Contact = () => {
                 <div>
                     <p className="text-white">-Contacto</p>
                     <h2 className='font-medium text-white leading-tight'>Puedes contactarme por estos medios</h2>
-                    <p className="mt-2 text-white">Espero saber de ti pronto, me puedes contactar a través de estos medios y estare muy a gusto de contestarte</p>
+                    <p className="mt-2 text-white">Me encantaría saber de ti, puedes contactarme a través de estos medios, estaré encantada de responderte</p>
                 </div>
                 <div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 lg:mt-14">

@@ -14,13 +14,13 @@ const servicesData = [
         icon: iconUX,
         title: "UX/UI Designer",
         description:
-            "Diseño de interfaces intuitivas, prototipos interactivos y flujos de usuario, enfocándome en la estética, usabilidad y objetivos del proyecto.",
+            "Experta en interfaces intuitivas centradas en el usuario y flujos optimizados con objetivos de negocio para maximizar el impacto y la conversión.",
     },
     {
         icon: iconDesign,
         title: "Web Designer",
         description:
-            "Especializada en el diseño de páginas modernas y responsive, cuidando tanto la estética como la experiencia del usuario.",
+            "Especializada en el diseño de páginas modernas y responsive,  fusionando estética y experiencia de usuario para crear interfaces atractivas y funcionales.",
     },
 ];
 

@@ -34,8 +34,12 @@ const NavBar = () => {
     const handleScroll = (e, id) => {
         e.preventDefault();
         smoothScroll(id);
-        setIsOpen(false);
+        
+        setTimeout(() => {
+            setIsOpen(false);
+        }, 100); 
     };
+    
 
     return (
         <nav className="px-5 lg:px-20 pt-6">
