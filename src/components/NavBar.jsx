@@ -34,9 +34,7 @@ const NavBar = () => {
     const handleScroll = (e, id) => {
         e.preventDefault();
         setIsOpen(false);
-        setTimeout(() => {
-            smoothScroll(id);
-        }, 20); 
+        smoothScroll(id);
     };
     
     

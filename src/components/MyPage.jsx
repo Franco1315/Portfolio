@@ -28,9 +28,9 @@ const MyPage = () => {
             ></a>
 
             {/* Contenido */}
-            <div className='absolute top-4 md:top-16 lg:top-20 left-5 lg:left-20 z-20 text-white rounded-lg py-4'>
+            <div className='absolute top-4 md:top-16 lg:top-20 left-5 lg:left-20 z-20 text-white rounded-lg py-2'>
                 <p>-Mi página web</p>
-                <h2 className='font-semibold leading-tight'>
+                <h2 className='leading-tight'>
                     Puedes ver el diseño de mi página 
                     <span className="border-b-2 border-secondary inline-block text-secondary transition-all duration-300 hover:border-primary hover:text-primary mx-2">
                         <a href="https://www.figma.com/design/uo1oFV9B3RXH2OEtvXPeVD/Portfolio?node-id=6-47&t=cfospMEx1HDO4AL2-1" target='_blank'>aquí</a>
