@@ -33,12 +33,12 @@ const NavBar = () => {
 
     const handleScroll = (e, id) => {
         e.preventDefault();
-        smoothScroll(id);
-        
+        setIsOpen(false);
         setTimeout(() => {
-            setIsOpen(false);
-        }, 100); 
+            smoothScroll(id);
+        }, 20); 
     };
+    
     
 
     return (
