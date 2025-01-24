@@ -28,7 +28,7 @@ const MyPage = () => {
             ></a>
 
             {/* Contenido */}
-            <div className='absolute top-4 md:top-16 lg:top-20 left-5 lg:left-20 z-20 text-white rounded-lg py-2'>
+            <div className='absolute top-4 md:top-16 lg:top-20 left-5 lg:left-20 z-20 text-white rounded-lg py-2 text-my-page'>
                 <p>-Mi página web</p>
                 <h2 className='leading-tight'>
                     Puedes ver el diseño de mi página 
