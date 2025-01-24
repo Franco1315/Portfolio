@@ -1,4 +1,4 @@
-import CardContact from "./CardContact"
+import CardContact from "./cards/CardContact"
 import iconLikedin from '../assets/svg/linkedin.svg';
 import iconMovil from '../assets/svg/movil.svg';
 import iconMail from '../assets/svg/mail.svg';

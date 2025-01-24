@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import CardProject from "./CardProject";
+import CardProject from "./cards/CardProject";
 import ImageArchiff from '../assets/image-projects/archiff.jpg';
 import ImageMotostech from '../assets/image-projects/motostech.jpg';
 import ImageZero from '../assets/image-projects/zeronet.jpg';

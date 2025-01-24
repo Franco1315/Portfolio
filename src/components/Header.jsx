@@ -2,8 +2,8 @@ import { Link } from 'react-scroll';
 import { motion } from 'framer-motion'; // Importamos Framer Motion
 import imagenHeader from '../assets/foto-presentation.png';
 import CV from '../assets/cv/CV-MARIA-FRANCO.pdf';
-import NavBar from './NavBar';
-import SkillBar from './SkillBar';
+import NavBar from './elements/NavBar';
+import SkillBar from './elements/SkillBar';
 
 const Header = () => {
     return (
