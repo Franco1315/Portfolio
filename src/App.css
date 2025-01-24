@@ -79,6 +79,14 @@ h2 {
   }
 }
 
+@media (min-width: 1000px) and (max-width: 1428px){
+  .title-header {
+    font-size: 30px;
+  }
+}
+
+
+
 
 
 
