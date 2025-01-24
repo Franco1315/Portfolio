@@ -1,42 +1,57 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768); 
+        };
+
+        window.addEventListener("resize", handleResize);
+        handleResize(); 
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     const smoothScroll = (target) => {
         const element = document.querySelector(target);
         if (!element) return;
+        if (isMobile) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+            const targetPosition = element.getBoundingClientRect().top + window.scrollY;
+            const startPosition = window.scrollY;
+            const distance = targetPosition - startPosition;
+            const duration = 700;
+            let start = null;
 
-        const targetPosition = element.getBoundingClientRect().top + window.scrollY;
-        const startPosition = window.scrollY;
-        const distance = targetPosition - startPosition;
-        const duration = 700;
-        let start = null;
+            const animation = (currentTime) => {
+                if (!start) start = currentTime;
+                const timeElapsed = currentTime - start;
+                const progress = Math.min(timeElapsed / duration, 1);
+                window.scrollTo(0, startPosition + distance * easeInOutQuad(progress));
 
-        const animation = (currentTime) => {
-            if (!start) start = currentTime;
-            const timeElapsed = currentTime - start;
-            const progress = Math.min(timeElapsed / duration, 1);
-            window.scrollTo(0, startPosition + distance * easeInOutQuad(progress));
+                if (timeElapsed < duration) {
+                    requestAnimationFrame(animation);
+                }
+            };
 
-            if (timeElapsed < duration) {
-                requestAnimationFrame(animation);
-            }
-        };
+            const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
 
-        const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-
-        requestAnimationFrame(animation);
+            requestAnimationFrame(animation);
+        }
     };
 
     const handleScroll = (e, id) => {
         e.preventDefault();
-        setIsOpen(false);
         smoothScroll(id);
+        setIsOpen(false); 
     };
-    
+
     return (
         <nav className="px-5 lg:px-20 pt-6">
             <div className="bg-primary py-2 lg:py-3 flex justify-between items-center px-4 rounded-full">
