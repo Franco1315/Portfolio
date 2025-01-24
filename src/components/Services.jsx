@@ -30,7 +30,7 @@ const Services = () => {
             <div className="bg-primary py-10 lg:py-20 px-5 lg:px-20">
                 <div>
                     <p className="text-white">-Servicios</p>
-                    <h2 className="text-white"><span className="border-b-2 border-secondary inline-block">Servicios</span> que ofrezco</h2>
+                    <h2 className="text-white"><span className="border-b-2 border-secondary inline-block">Especialidades </span> profesionales</h2>
                 </div>
                 <div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 lg:mt-14">
