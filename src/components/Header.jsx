@@ -1,6 +1,7 @@
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion'; // Importamos Framer Motion
 import imagenHeader from '../assets/foto-presentation.png';
+import CV from '../assets/cv/CV-MARIA-FRANCO.pdf';
 import NavBar from './NavBar';
 import SkillBar from './SkillBar';
 
@@ -36,7 +37,7 @@ const Header = () => {
                             className='bg-primary py-2 px-5 cursor-pointer rounded-full text-white transition-all duration-300 hover:bg-secondary'>
                             Contactame
                         </Link>
-                        <a href="" className='bg-secondary transition-all duration-300 hover:bg-primary py-2 px-5 rounded-full text-white'>Descargar CV</a>
+                        <a href={CV} download="CV-Maria-Franco.pdf" className='bg-secondary transition-all duration-300 hover:bg-primary py-2 px-5 rounded-full text-white'>Descargar CV</a>
                     </div>
                 </motion.div>
 
