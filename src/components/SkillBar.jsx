@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import iconHeader from '../assets/icon-header.svg';
+import iconHeader from '../assets/svg/icon-header.svg';
 
 const SkillBar = () => {
     const scrollRef = useRef(null);

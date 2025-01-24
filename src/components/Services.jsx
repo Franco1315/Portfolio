@@ -1,7 +1,7 @@
 import CardService from './CardService.jsx'
-import iconDeveloper from '../assets/developer.svg';
-import iconUX from '../assets/ux-ui.svg';
-import iconDesign from '../assets/design.svg';
+import iconDeveloper from '../assets/svg/developer.svg';
+import iconUX from '../assets/svg/ux-ui.svg';
+import iconDesign from '../assets/svg/design.svg';
 
 const servicesData = [
     {

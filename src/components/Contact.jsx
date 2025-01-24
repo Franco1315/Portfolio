@@ -1,7 +1,7 @@
 import CardContact from "./CardContact"
-import iconLikedin from '../assets/linkedin.svg';
-import iconMovil from '../assets/movil.svg';
-import iconMail from '../assets/mail.svg';
+import iconLikedin from '../assets/svg/linkedin.svg';
+import iconMovil from '../assets/svg/movil.svg';
+import iconMail from '../assets/svg/mail.svg';
 
 const contactData = [
     {

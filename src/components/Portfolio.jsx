@@ -1,14 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
 import CardProject from "./CardProject";
-import ImageArchiff from '../assets/archiff.jpg';
-import ImageMotostech from '../assets/motostech.jpg';
-import ImageZero from '../assets/zeronet.jpg';
-import ImageSofafront from '../assets/sofas-fronted.png';
-import ImageSofadesign from '../assets/rediseno-sofas.jpg';
-import ImageSofaconfi from '../assets/react-configurador.jpg';
-import ImageDemo from '../assets/demo.jpg';
-import ImagePatacona from '../assets/patacona.png';
-import ImageMotoselectricas from '../assets/motoselectricas.jpg';
+import ImageArchiff from '../assets/image-projects/archiff.jpg';
+import ImageMotostech from '../assets/image-projects/motostech.jpg';
+import ImageZero from '../assets/image-projects/zeronet.jpg';
+import ImageSofafront from '../assets/image-projects/sofas-fronted.png';
+import ImageSofadesign from '../assets/image-projects/rediseno-sofas.jpg';
+import ImageSofaconfi from '../assets/image-projects/react-configurador.jpg';
+import ImageDemo from '../assets/image-projects/demo.jpg';
+import ImagePatacona from '../assets/image-projects/patacona.png';
+import ImageMotoselectricas from '../assets/image-projects/motoselectricas.jpg';
 
 const projectsData = [
     {
