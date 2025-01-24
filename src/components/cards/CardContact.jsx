@@ -1,4 +1,4 @@
-import iconArrow from '../assets/svg/arrow-contact.svg';
+import iconArrow from '../../assets/svg/arrow-contact.svg';
 
 const CardContact = ({ icon, title, linkText, link }) => {
     return (

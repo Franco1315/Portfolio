@@ -1,4 +1,4 @@
-import IconArrow from '../assets/svg/icon-arrow.svg';
+import IconArrow from '../../assets/svg/icon-arrow.svg';
 
 const CardProject = ({ link, image, title, tags = [] }) => {
     return (
