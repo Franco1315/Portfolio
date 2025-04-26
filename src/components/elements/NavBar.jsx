@@ -58,7 +58,7 @@ const NavBar = () => {
                 {/* Logo */}
                 <div className="flex items-center gap-x-4">
                     <div className="bg-secondary rounded-full p-2 w-10 h-10 flex items-center justify-center">
-                        <p className="text-white text-2xl">M</p>
+                    <p className="text-white text-2xl" spellCheck="false" translate="no">M</p>
                     </div>
                     <h1 className="text-white font-bold text-xl lg:text-2xl">María Franco</h1>
                 </div>
